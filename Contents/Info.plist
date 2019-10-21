@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>JSON</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.plexapp.agents.json</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
 	<key>PlexFrameworkVersion</key>
 	<string>2</string>
 	<key>PlexPluginClass</key>
