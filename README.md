@@ -20,7 +20,7 @@ It's designed to work alongside other tools and methods of collecting metadata, 
 
 At the time of writing, JSON metadata is supported _for movies only_.
 
-To define metadata for a movie, a JSON file named exactly `Info.json` must be present in the same directory as your movie file(s). For example:
+To define metadata for a movie, a JSON file named exactly `Info.json` must be present in the same directory, or a parent as your movie file(s). For example:
 
 ```
 Movies
@@ -38,21 +38,23 @@ The structure of the `Info.json` file follows as closely as possible that of the
 
 ```json
 {
-  "title": "Akira",
-  "summary": "Childhood friends Tetsuo and Kaneda are pulled into the...",
-  "year": 1988,
-  "rating": 7.7,
-  "content_rating": "M",
-  "studio": "Bandai Visual Company",
-  "duration": 124,
-  "directors": ["Katsuhiro Ōtomo"],
-  "roles": [
-    {
-      "actor": "Mitsuo Iwata",
-      "role": "Shôtarô Kaneda"
-    }
-  ],
-  "genres": ["Animation", "Science Fiction"],
-  "collections": ["Anime"]
+  "akira.mkv": {
+    "title": "Akira",
+    "summary": "Childhood friends Tetsuo and Kaneda are pulled into the...",
+    "year": 1988,
+    "rating": 7.7,
+    "content_rating": "M",
+    "studio": "Bandai Visual Company",
+    "duration": 124,
+    "directors": ["Katsuhiro Ōtomo"],
+    "roles": [
+      {
+        "actor": "Mitsuo Iwata",
+        "role": "Shôtarô Kaneda"
+      }
+    ],
+    "genres": ["Animation", "Science Fiction"],
+    "collections": ["Anime"]
+  }
 }
 ```
