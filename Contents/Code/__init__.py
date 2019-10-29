@@ -78,6 +78,11 @@ class JSONAgent(Agent.Movies):
             pass
 
         try:
+            metadata.originally_available_at = info['originally_available_at']
+        except:
+            pass
+
+        try:
             metadata.rating = info['rating']
         except:
             pass
