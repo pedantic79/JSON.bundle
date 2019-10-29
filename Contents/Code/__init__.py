@@ -140,5 +140,6 @@ class JSONAgent(Agent.Movies):
         try:
             for c in info['collections']:
                 metadata.collections.add(c)
+            metadata.collections.add('InfoJSON')
         except:
             pass
