@@ -1,5 +1,6 @@
 import os
 import json
+from dateutil.parser import parse
 
 
 def Start():
@@ -78,7 +79,9 @@ class JSONAgent(Agent.Movies):
             pass
 
         try:
-            metadata.originally_available_at = info['originally_available_at']
+            date_object = parse(info['originally_available_at'])
+            metadata.originally_available_at = date_object
+            metadata.year = metadata.originally_available_at.year
         except:
             pass
 
