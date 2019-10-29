@@ -10,7 +10,8 @@ def find_info_json(part):
     directory = os.path.dirname(part)
     Log("find_info_json " + directory + "]")
 
-    while directory != '':
+    i = 0
+    while i < 2:
         Log("Searching " + directory)
         path = os.path.join(directory, 'Info.json')
         if os.path.exists(path):
@@ -18,6 +19,7 @@ def find_info_json(part):
             return path
         else:
             directory = os.path.dirname(directory)
+            i += 1
 
     raise FileNotFoundError()
 
